@@ -1,4 +1,4 @@
 form button{
   background: linear-gradient(rgb(48 9 65), #10f2dd47);  
-  margin-top: 1rem;
+  margin-top: 1rem !important;
 }
