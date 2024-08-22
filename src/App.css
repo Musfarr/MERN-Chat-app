@@ -1,4 +1,12 @@
+
+body{
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 12%, rgba(121,9,39,1) 49%, rgba(0,0,0,1) 86%);
+}
+
 form button{
-  background: linear-gradient(rgb(48 9 65), #10f2dd47);  
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 12%, rgba(121,9,39,1) 49%, rgba(0,0,0,1) 86%);
+  /* background: linear-gradient(rgb(48 9 65), #10f2dd47);   */
   margin-top: 1rem !important;
 }
