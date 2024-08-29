@@ -1,6 +1,6 @@
-import { Button, Container, Paper, TextField, Typography } from '@mui/material'
+import { Avatar, Button, Container, Paper, Stack, TextField, Typography } from '@mui/material'
 import React, { useState } from 'react'
-
+import {cameraAl} from '@mui/icons-material'
 
 const Login = () => {
 
@@ -11,7 +11,10 @@ const Login = () => {
 
 
 
-
+const handleSubmit = (e) => { 
+    e.preventDefault();
+    window.location.href = '/home'
+}
 
 
 // const submit = (e) => {
@@ -63,15 +66,17 @@ const Login = () => {
                 />
 
                 <Button variant='contained'type='submit' size='large'  fullWidth  > Login </Button>
-                <Button variant='contained'type='submit' size='large'  fullWidth onClick={ () => setlogin(!islogin)} > Register </Button>
+                <Button variant='contained' size='large'  fullWidth onClick={ () => setlogin(!islogin)} > Register </Button>
 
             </form>
             </>
             :
             <>
             {/* Register Page */}
+
+            <Avatar sx={{width : '8rem' , height : '8rem'}} />
             <Typography variant='h4'> Register </Typography>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <TextField
                 label = "Username"
                 required
